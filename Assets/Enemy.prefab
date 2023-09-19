@@ -102,6 +102,7 @@ MonoBehaviour:
   initialSpeed: 3
   speedIncreaseRate: 0.5
   planetAttractionSpeed: 2
+  gameOverText: {fileID: 0}
 --- !u!50 &3192845145869573555
 Rigidbody2D:
   serializedVersion: 4
@@ -163,4 +164,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1

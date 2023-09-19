@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class EnemyGreenController : MonoBehaviour
 {
@@ -14,14 +16,18 @@ public class EnemyGreenController : MonoBehaviour
     private Transform planetTransform;
     private float attractionForce;
     private GameManager gameManager;
+    public TextMeshProUGUI gameOverText;
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && !gameManager.IsGameOver())
+        if (other.CompareTag("Player"))
         {
-            gameManager.GameOver();
-            // You can also add other game over logic here.
-            Debug.LogError("Game Over");
+            Time.timeScale = 0f;
+            //gameOverText.enabled = false;
+            gameOverText.text = "GAME OVER. You crashed into a green enemy!";
+            Debug.LogAssertion("TEST");
+            //gameManager.GameOver();
+            //Debug.LogError("Game Over");
         }
     }
 

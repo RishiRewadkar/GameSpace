@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class EnemyController : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class EnemyController : MonoBehaviour
     private bool attractedToPlanet = false;
     private Transform planetTransform;
     private float attractionForce;
+    public TextMeshProUGUI gameOverText;
 
 
     private GameManager gameManager;
@@ -21,8 +23,8 @@ public class EnemyController : MonoBehaviour
     {
         if (other.CompareTag("Player") && !gameManager.IsGameOver())
         {
+            gameOverText.text = "GAME OVER. You crashed into the red enemy!";
             gameManager.GameOver();
-            // You can also add other game over logic here.
             Debug.LogError("Game Over");
         }
     }
@@ -38,7 +40,6 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        // Find the player GameObject based on its tag.
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
         if (player != null)
@@ -55,7 +56,7 @@ public class EnemyController : MonoBehaviour
     {
         if (attractedToPlanet && planetTransform != null)
         {
-            // Implement code to move the enemy toward the planet.
+            // Enemy to planet.
             Vector3 direction = (planetTransform.position - transform.position).normalized;
             transform.Translate(direction * planetAttractionSpeed * Time.deltaTime);
         }
@@ -63,7 +64,7 @@ public class EnemyController : MonoBehaviour
         {
             currentSpeed += speedIncreaseRate * Time.deltaTime;
 
-            // Move the enemy using the current speed towards the player.
+            // Enemy To Player.
             Vector3 direction = (playerShip.position - transform.position).normalized;
             transform.Translate(direction * currentSpeed * Time.deltaTime);
         }
