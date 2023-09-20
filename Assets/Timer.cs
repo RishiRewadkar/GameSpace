@@ -24,12 +24,11 @@ public class Timer : MonoBehaviour
         int minutes = Mathf.FloorToInt(timer / 60);
         int seconds = Mathf.FloorToInt(timer % 60);
 
-        Rect labelRect = new Rect(Screen.width - 120, 10, 100, 40);
+        Rect labelRect = new Rect(Screen.width - 500, 10, 200, 60); // Adjusted width and height
 
         GUIStyle style = new GUIStyle(GUI.skin.label);
-        style.fontSize = 16;
+        style.fontSize = 28;
 
-        // Display the timer with the updated style and position
         GUI.Label(labelRect, string.Format("Survived: {0:00}:{1:00}", minutes, seconds), style);
 
     }
