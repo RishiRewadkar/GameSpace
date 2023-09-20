@@ -40,7 +40,7 @@ public class EnemyGreenController : MonoBehaviour
 
     void Start()
     {
-        // Find the player GameObject based on its tag.
+        gameOverText = FindObjectOfType<TextMeshProUGUI>();
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
         if (player != null)

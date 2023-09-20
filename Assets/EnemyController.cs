@@ -23,6 +23,7 @@ public class EnemyController : MonoBehaviour
     {
         if (other.CompareTag("Player") && !gameManager.IsGameOver())
         {
+            Time.timeScale = 0f;
             gameOverText.text = "GAME OVER. You crashed into the red enemy!";
             gameManager.GameOver();
             Debug.LogError("Game Over");
@@ -39,6 +40,7 @@ public class EnemyController : MonoBehaviour
 
     void Start()
     {
+        gameOverText = FindObjectOfType<TextMeshProUGUI>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
