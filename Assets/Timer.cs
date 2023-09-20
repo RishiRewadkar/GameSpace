@@ -27,10 +27,10 @@ public class Timer : MonoBehaviour
         Rect labelRect = new Rect(Screen.width - 120, 10, 100, 40);
 
         GUIStyle style = new GUIStyle(GUI.skin.label);
-        style.fontSize = 24; // Set the font size to 24
+        style.fontSize = 16;
 
         // Display the timer with the updated style and position
-        GUI.Label(labelRect, string.Format("{0:00}:{1:00}", minutes, seconds), style);
+        GUI.Label(labelRect, string.Format("Survived: {0:00}:{1:00}", minutes, seconds), style);
 
     }
 
