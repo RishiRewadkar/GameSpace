@@ -8,6 +8,7 @@ TagManager:
   - planet
   - Planet
   - EnemyGreen
+  - MyText
   layers:
   - Default
   - TransparentFX
