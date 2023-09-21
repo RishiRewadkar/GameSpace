@@ -431,6 +431,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planet_Red (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7305579218269294361, guid: db70175ee87c5ac46ac714baaf3016d5, type: 3}
+      propertyPath: m_Color.b
+      value: 0.10204698
+      objectReference: {fileID: 0}
+    - target: {fileID: 7305579218269294361, guid: db70175ee87c5ac46ac714baaf3016d5, type: 3}
+      propertyPath: m_Color.g
+      value: 0.10204698
+      objectReference: {fileID: 0}
+    - target: {fileID: 7305579218269294361, guid: db70175ee87c5ac46ac714baaf3016d5, type: 3}
+      propertyPath: m_Color.r
+      value: 0.46226418
+      objectReference: {fileID: 0}
     - target: {fileID: 7922296049595234503, guid: db70175ee87c5ac46ac714baaf3016d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.7
@@ -880,6 +892,18 @@ PrefabInstance:
     - target: {fileID: 7220890355014085745, guid: 264c0bb3c1826354bb561bfe470930dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937124651030193410, guid: 264c0bb3c1826354bb561bfe470930dc, type: 3}
+      propertyPath: m_Color.b
+      value: 0.19619964
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937124651030193410, guid: 264c0bb3c1826354bb561bfe470930dc, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7169812
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937124651030193410, guid: 264c0bb3c1826354bb561bfe470930dc, type: 3}
+      propertyPath: m_Color.r
+      value: 0.15151297
       objectReference: {fileID: 0}
     - target: {fileID: 9066787886024542892, guid: 264c0bb3c1826354bb561bfe470930dc, type: 3}
       propertyPath: m_Name
@@ -1589,7 +1613,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 162.3, y: -11.300003}
+  m_AnchoredPosition: {x: 162.30002, y: -11.299988}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1910461202
@@ -1622,8 +1646,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287629512
-  m_fontColor: {r: 0.7830189, g: 0.033241354, b: 0.5633893, a: 1}
+    rgba: 4278289543
+  m_fontColor: {r: 0.5283019, g: 0.51630116, b: 0.0019935528, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1640,8 +1664,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44
-  m_fontSizeBase: 44
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1854,6 +1878,18 @@ PrefabInstance:
     - target: {fileID: 3581693315773032474, guid: db70175ee87c5ac46ac714baaf3016d5, type: 3}
       propertyPath: m_Name
       value: Planet_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 7305579218269294361, guid: db70175ee87c5ac46ac714baaf3016d5, type: 3}
+      propertyPath: m_Color.b
+      value: 0.1161445
+      objectReference: {fileID: 0}
+    - target: {fileID: 7305579218269294361, guid: db70175ee87c5ac46ac714baaf3016d5, type: 3}
+      propertyPath: m_Color.g
+      value: 0.1161445
+      objectReference: {fileID: 0}
+    - target: {fileID: 7305579218269294361, guid: db70175ee87c5ac46ac714baaf3016d5, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7075472
       objectReference: {fileID: 0}
     - target: {fileID: 7922296049595234503, guid: db70175ee87c5ac46ac714baaf3016d5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2069,6 +2105,18 @@ PrefabInstance:
     - target: {fileID: 7220890355014085745, guid: 264c0bb3c1826354bb561bfe470930dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937124651030193410, guid: 264c0bb3c1826354bb561bfe470930dc, type: 3}
+      propertyPath: m_Color.b
+      value: 0.15250975
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937124651030193410, guid: 264c0bb3c1826354bb561bfe470930dc, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7924528
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937124651030193410, guid: 264c0bb3c1826354bb561bfe470930dc, type: 3}
+      propertyPath: m_Color.r
+      value: 0.28100678
       objectReference: {fileID: 0}
     - target: {fileID: 9066787886024542892, guid: 264c0bb3c1826354bb561bfe470930dc, type: 3}
       propertyPath: m_Name
